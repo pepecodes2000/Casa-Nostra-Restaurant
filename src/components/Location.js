@@ -11,10 +11,10 @@ const Location = () => {
       }}
     >
       <div className="bg-black text-white rounded p-4 shadow-lg">
-      <h2 className="text-center mb-4">Localización</h2>
+        <h2 className="text-center mb-4">Localización</h2>
         {/* Contenedor principal con dos columnas */}
         <div className="d-flex flex-column flex-md-row align-items-center justify-content-between p-4">
-          
+
           {/* Información */}
           <div className="px-4">
             <h1 className="fw-bold">Te esperamos</h1>
@@ -46,7 +46,7 @@ const Location = () => {
             <div>
               <h3 className="fs-5 fw-semibold">Redes sociales</h3>
               <p>
-                <a href="#" className="text-white text-decoration-none">@unsitiogenial</a>
+                <a href="facebook.com" className="text-white text-decoration-none">@unsitiogenial</a>
               </p>
             </div>
           </div>
