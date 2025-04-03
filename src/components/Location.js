@@ -2,7 +2,7 @@ import React from 'react';
 
 const Location = () => {
     return (
-        <div>
+        <div className="container mt-4">
             <h2>Localización</h2>
             <p>Calle Cualquiera 123, Cualquier Lugar, CP: 12345</p>
             <p>Horario: De Martes a Domingo, de 8:00h a 23:00h.</p>

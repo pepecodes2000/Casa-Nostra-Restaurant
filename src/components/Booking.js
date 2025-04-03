@@ -2,14 +2,22 @@ import React from 'react';
 
 const Booking = () => {
     return (
-        <div>
+        <div className="container mt-4">
             <h2>Haz una reserva</h2>
             <form>
-                <input type="text" placeholder="Escribe tu nombre" required />
-                <input type="tel" placeholder="Tu teléfono" required />
-                <input type="number" placeholder="Nº de comensales" required />
-                <input type="datetime-local" required />
-                <button type="submit">Reservar</button>
+                <div className="mb-3">
+                    <input type="text" className="form-control" placeholder="Escribe tu nombre" required />
+                </div>
+                <div className="mb-3">
+                    <input type="tel" className="form-control" placeholder="Tu teléfono" required />
+                </div>
+                <div className="mb-3">
+                    <input type="number" className="form-control" placeholder="Nº de comensales" required />
+                </div>
+                <div className="mb-3">
+                    <input type="datetime-local" className="form-control" required />
+                </div>
+                <button type="submit" className="btn btn-primary">Reservar</button>
             </form>
         </div>
     );
