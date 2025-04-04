@@ -59,6 +59,7 @@ const Location = () => {
             <h1 className="fs-5 fw-semibold mb-3">Mapa</h1>
             <div className="rounded overflow-hidden">
               <iframe
+                title="Google Maps Casa Nostra"
                 className="w-100"
                 style={{ height: '375px' }}
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d637.1149831963561!2d-79.0024778!3d-2.8887975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd1985bb5af65b%3A0xd276e077e385b1a!2sCasa%20Nostra!5e0!3m2!1ses!2sec!4v1712098765432!5m2!1ses!2sec"

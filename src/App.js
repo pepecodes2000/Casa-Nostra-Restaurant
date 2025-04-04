@@ -1,38 +1,43 @@
 import './App.css';
 import React, { useRef } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Booking from './components/Booking';
 import History from './components/History';
 import Location from './components/Location';
 import Menu from './components/Menu';
+import Navbar from './components/Navbar';
+import FacebookCarousel from './components/FacebookCarousel'; 
 
 function App() {
   const bookingRef = useRef(null);
 
   const scrollToBooking = () => {
-    bookingRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (bookingRef.current) {
+      bookingRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1> Casa Nostra Restaurant </h1>
-      </header>
-      <main>
-        <section>
-          <h2>Bienvenido a nuestro restaurante</h2>
-          <p>Disfruta de una experiencia gastronómica única.</p>
-        </section>
-        <div ref={bookingRef}>
-          <Booking />
-        </div>
-        <History />
-        <Location />
-        <Menu onReserveClick={scrollToBooking} />
-      </main>
-      <footer>
-        <p>&copy; 2023 Un Sitio Genial. Todos los derechos reservados.</p>
-      </footer>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <FacebookCarousel />
+        <main>
+          {/* Sección con scroll */}
+          <div ref={bookingRef}>
+            <Booking />
+          </div>
+
+          <History />
+          <Location />
+          <Menu onReserveClick={scrollToBooking} />
+        </main>
+
+        <footer className="text-center py-4 bg-dark text-white">
+          <p>&copy; 2025 Un Sitio Genial. Todos los derechos reservados.</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
