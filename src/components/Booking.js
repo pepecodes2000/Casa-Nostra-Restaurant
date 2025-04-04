@@ -2,6 +2,14 @@ import React from 'react';
 
 const Booking = () => {
     return (
+        <section
+            className="d-flex justify-content-center align-items-center min-vh-100 bg-dark text-white p-4"
+            style={{
+                backgroundImage: 'url("/images/booking.png")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}
+        >
         <div className="container mt-4">
             <h2>Haz una reserva</h2>
             <form>
@@ -20,6 +28,7 @@ const Booking = () => {
                 <button type="submit" className="btn btn-primary">Reservar</button>
             </form>
         </div>
+        </section>
     );
 };
 
