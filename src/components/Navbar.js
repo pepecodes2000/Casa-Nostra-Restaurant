@@ -41,19 +41,7 @@ const Navbar = () => {
             </nav>
 
             {/* Publicación de Facebook insertada */}
-            <div className="facebook-embed mt-5 pt-5">
-                <div className="fb-page"
-                    data-href="https://www.facebook.com/profile.php?id=100076219538221"
-                    data-tabs="timeline"
-                    data-width="500"
-                    data-height="600"
-                    data-small-header="false"
-                    data-adapt-container-width="true"
-                    data-hide-cover="false"
-                    data-show-facepile="true">
-                </div>
-
-            </div>
+            
         </div>
     );
 }
