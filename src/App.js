@@ -5,8 +5,8 @@ import Booking from './components/Booking';
 import History from './components/History';
 import Location from './components/Location';
 import Menu from './components/Menu';
-import Navbar from './components/Navbar';
-import FacebookCarousel from './components/FacebookCarousel'; 
+import Navbar from './components/Navbar/Navbar';
+import FacebookCarousel from './components/FacebookCarousel/FacebookCarousel'; 
 
 function App() {
   const bookingRef = useRef(null);
@@ -34,7 +34,7 @@ function App() {
         </main>
 
         <footer className="text-center py-4 bg-dark text-white">
-          <p>&copy; 2025 Un Sitio Genial. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Casa Nostra Restaurant. Todos los derechos reservados.</p>
         </footer>
       </div>
     </Router>

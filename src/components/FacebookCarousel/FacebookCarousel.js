@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../styles/FacebookCarousel.css';
+import './FacebookCarousel.css';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const imageUrls = [

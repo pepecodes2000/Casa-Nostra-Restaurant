@@ -27,7 +27,7 @@ const Booking = () => {
             const seleccionada = new Date(fecha);
             const manana = new Date(ahora.getFullYear(), ahora.getMonth(), ahora.getDate() + 1);
             if (seleccionada < manana) {
-            nuevosErrores.fecha = 'La fecha debe ser a partir de mañana.';
+                nuevosErrores.fecha = 'La fecha debe ser a partir de mañana.';
             }
         }
 
@@ -45,15 +45,17 @@ const Booking = () => {
     };
 
     return (
-        <section
-            className="d-flex justify-content-center align-items-center min-vh-100 text-white"
+        <section className="d-flex justify-content-center align-items-center text-white"
             style={{
+                minHeight: 'calc(100% + 100px)',
+                padding: '90px 0',
                 backgroundImage: 'url("/images/booking.png")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
             }}
         >
+
             <div className="bg-dark p-5 rounded shadow-lg" style={{ opacity: 0.9, maxWidth: '500px', width: '100%' }}>
                 <h2 className="fw-bold mb-4 text-center">Haz una reserva</h2>
                 <form onSubmit={handleSubmit}>
