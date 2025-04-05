@@ -33,7 +33,7 @@ function App() {
           <Menu onReserveClick={scrollToBooking} />
         </main>
 
-        <footer className="text-center py-4 bg-dark text-white">
+        <footer className="text-center py-2 bg-dark text-white">
           <p>&copy; 2025 Casa Nostra Restaurant. Todos los derechos reservados.</p>
         </footer>
       </div>
