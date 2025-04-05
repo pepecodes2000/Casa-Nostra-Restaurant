@@ -39,8 +39,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-
-            {/* Publicación de Facebook insertada */}
             
         </div>
     );
