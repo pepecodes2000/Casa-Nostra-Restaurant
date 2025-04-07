@@ -7,6 +7,7 @@ import Location from './components/Location';
 import Menu from './components/Menu';
 import Navbar from './components/Navbar/Navbar';
 import FacebookCarousel from './components/FacebookCarousel/FacebookCarousel'; 
+import About from './components/About/About';
 
 function App() {
   const bookingRef = useRef(null);
@@ -27,7 +28,7 @@ function App() {
           <div ref={bookingRef}>
             <Booking />
           </div>
-
+          <About />
           <History />
           <Location />
           <Menu onReserveClick={scrollToBooking} />

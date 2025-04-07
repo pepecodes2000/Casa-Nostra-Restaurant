@@ -1,0 +1,19 @@
+.about-container {
+    padding: 85px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 40px;
+    }
+}
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
