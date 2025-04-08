@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import FacebookCarousel from './components/FacebookCarousel/FacebookCarousel';
 import About from './components/About/About';
 import VideoHighlight from './components/VideoHighlight/VideoHighlight';
+import WhatsappButton from './components/WhatsappButton/WhatsappButton';
 
 function App() {
   const bookingRef = useRef(null);
@@ -33,6 +34,7 @@ function App() {
           <History />
           <Location />
           <Menu onReserveClick={scrollToBooking} />
+          <WhatsappButton />
         </main>
 
         <footer className="text-center py-2 bg-dark text-white">
