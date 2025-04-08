@@ -1,47 +1,65 @@
 /* Estilo para el botón */
 .whatsapp-btn {
-    animation: bounce 2s infinite;
-    transition: transform 0.3s ease-in-out;
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  /* Efecto de aumento en hover */
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  
-  .whatsapp-btn:hover {
-    transform: scale(1.1); /* Efecto de aumento en hover */
+
+  50% {
+    transform: translateY(-10px);
+    /* Efecto de rebote */
   }
-  
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px); /* Efecto de rebote */
-    }
+}
+
+/* Efecto de vibración */
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
   }
-  
-  /* Efecto de vibración */
-  @keyframes vibrate {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(5px); }
+
+  25% {
+    transform: translateX(-5px);
   }
-  
-  .vibrate {
-    animation: vibrate 0.1s linear infinite; /* Vibración continua durante 15 segundos */
+
+  50% {
+    transform: translateX(5px);
   }
-  
-  /* Estilo del mensaje emergente */
-  .message-popup {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 123, 255, 0.9);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+
+  75% {
+    transform: translateX(-5px);
   }
-  
+
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+.vibrate {
+  animation: vibrate 0.1s linear infinite;
+  /* Vibración continua durante 15 segundos */
+}
+
+.message-popup {
+  position: fixed;
+  bottom: 80px; /* Un poco arriba del botón */
+  right: 30px;  /* Alineado con el botón */
+  background-color: rgba(255, 255, 255, 0.95);
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
