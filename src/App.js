@@ -6,8 +6,9 @@ import History from './components/History';
 import Location from './components/Location';
 import Menu from './components/Menu';
 import Navbar from './components/Navbar/Navbar';
-import FacebookCarousel from './components/FacebookCarousel/FacebookCarousel'; 
+import FacebookCarousel from './components/FacebookCarousel/FacebookCarousel';
 import About from './components/About/About';
+import VideoHighlight from './components/VideoHighlight/VideoHighlight';
 
 function App() {
   const bookingRef = useRef(null);
@@ -24,7 +25,7 @@ function App() {
         <Navbar />
         <FacebookCarousel />
         <main>
-          {/* Sección con scroll */}
+          <VideoHighlight />
           <div ref={bookingRef}>
             <Booking />
           </div>
@@ -35,7 +36,7 @@ function App() {
         </main>
 
         <footer className="text-center py-2 bg-dark text-white">
-          <p>&copy; 2025 Casa Nostra Restaurant. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Casa Nostra Restaurant. Funciona gracias a UWEB.</p>
         </footer>
       </div>
     </Router>
